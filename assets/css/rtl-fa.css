@@ -1,0 +1,236 @@
+/* =========================================================
+   RTL + Persian overrides for Chrono Watch Store
+   Developer: Erfan Sadeghi (https://erfansadeghi.ir)
+   ========================================================= */
+
+/* Persian font (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+
+html[dir="rtl"] body{
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+}
+
+/* Keep emails/URLs readable */
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[name="Email"],
+html[dir="rtl"] input[type="url"],
+html[dir="rtl"] input[type="tel"]{
+  direction: ltr;
+  text-align: left;
+}
+
+/* Dropdown menus and breadcrumbs */
+html[dir="rtl"] .dropdown-menu{
+  text-align: right;
+}
+
+/* Mobile menu RTL fixes */
+html[dir="rtl"] .vs-mobile-menu{
+  text-align: right;
+}
+html[dir="rtl"] .vs-mobile-menu ul li ul li{
+  padding-right: 20px;
+  padding-left: 0;
+}
+html[dir="rtl"] .vs-mobile-menu ul li a:before{
+  /* replace left-pointing arrow in RTL */
+  margin-left: 10px;
+  margin-right: 0;
+  transform: rotate(180deg);
+}
+html[dir="rtl"] .vs-mobile-menu ul .vs-item-has-children > a .vs-mean-expand{
+  left: 0;
+  right: auto;
+}
+
+/* Offcanvas / mobile menu panel slide-in from right */
+html[dir="rtl"] .chrono-wrapper .chrono-toggle{
+  left: 10px;
+  right: auto;
+}
+html[dir="rtl"] .chrono-wrapper .chrono-area{
+  border-left: 3px solid #C6CBD2;
+  border-right: none;
+  right: -110%;
+  left: auto;
+}
+html[dir="rtl"] .chrono-wrapper.vs-body-visible .chrono-area{
+  right: 0;
+  left: auto;
+}
+
+/* Desktop submenu alignment */
+html[dir="rtl"] header nav .mainmenu .menu-item.has-children .submenu{
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+
+/* Replace missing background images (HTTrack created empty .html files) */
+.hero-banner-1,
+.features-1 .features-points,
+.features-2 .features-points,
+footer,
+.register,
+.login{
+  background-image: none !important;
+}
+.hero-banner-1{
+  background-color: #0B0C0D !important;
+  background-size: cover;
+}
+footer{
+  background-color: #0B0C0D !important;
+}
+.features-1 .features-points{
+  background-color: #F0F0F6 !important;
+}
+.features-2 .features-points{
+  background-color: #0B0C0D !important;
+}
+.register,
+.login{
+  background-color: #F8F8FF !important;
+}
+
+/* Font Awesome Pro -> Free fallback (map .fal/.fad to solid) */
+.fal, .fad{
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+}
+
+/* Small typography tweaks for Persian */
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4, 
+html[dir="rtl"] h5, 
+html[dir="rtl"] h6{
+  letter-spacing: 0 !important;
+}
+
+
+/* Back-to-top position for RTL */
+html[dir="rtl"] .back-to-top{
+  left: 12px;
+  right: auto;
+}
+@media (max-width: 490px){
+  html[dir="rtl"] .back-to-top{
+    left: -20px;
+    right: auto;
+  }
+}
+
+/* Slick dots alignment in RTL */
+html[dir="rtl"] .slick-dots{
+  left: 0;
+  right: auto;
+  text-align: left;
+}
+
+
+/* Font Awesome Pro pseudo-elements -> Free */
+.select::after,
+.top-bar .language-dropdown .dropdown-toggle:after,
+.vs-mobile-menu ul li a:before,
+.vs-mobile-menu ul .vs-item-has-children > a .vs-mean-expand:before{
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+}
+
+/* Select arrow position in RTL */
+html[dir="rtl"] .select::after{
+  left: 0;
+  right: auto;
+}
+
+
+/* Remove other missing decorative backgrounds (empty .html assets) */
+.categories .category-card .content,
+.product-card,
+.product-card.dark-bg,
+.product-card-list{
+  background-image: none !important;
+}
+
+/* Give cards a clean background color */
+.product-card,
+.product-card-list{
+  background-color: #ECECF2 !important;
+}
+.product-card.dark-bg{
+  background-color: #212627 !important;
+}
+
+/* RTL mirroring for product cards */
+html[dir="rtl"] .product-card{
+  padding-left: 0;
+  padding-right: 24px;
+  background-position: bottom left;
+  border-radius: 30px 30px 30px 0;
+}
+html[dir="rtl"] .product-card .icons-list{
+  right: -48px;
+  left: auto;
+}
+html[dir="rtl"] .product-card:hover .icons-list{
+  right: 24px;
+  left: auto;
+}
+html[dir="rtl"] .product-card .cart-btn{
+  left: 0;
+  right: auto;
+}
+
+html[dir="rtl"] .product-card-list{
+  padding: 32px 64px 32px 0;
+  background-position: bottom left;
+  border-radius: 30px 30px 30px 0;
+}
+@media (max-width: 1199px){
+  html[dir="rtl"] .product-card-list{
+    padding: 32px 16px;
+  }
+}
+html[dir="rtl"] .product-card-list .icons-list{
+  right: -48px;
+  left: auto;
+}
+html[dir="rtl"] .product-card-list:hover .icons-list{
+  right: 24px;
+  left: auto;
+}
+html[dir="rtl"] .product-card-list .cart-btn{
+  left: 0;
+  right: auto;
+}
+
+/* Quote decoration was an empty file in this package */
+.quote-vector{
+  display: none !important;
+}
+
+
+/* RTL spacing for nav thumbnails */
+html[dir="rtl"] .product-card-slider-nav-2 .nav-img-block{
+  margin-left: 16px;
+  margin-right: 0;
+}
+
+
+/* Flip directional chevrons in RTL */
+html[dir="rtl"] .fa-chevron-right,
+html[dir="rtl"] .fa-angle-right{
+  transform: rotate(180deg);
+}
+
+
+/* Coming soon banners (background assets were missing in the original package) */
+.coming-soon-banner-1,
+.coming-soon-banner-2{
+  background-image: none !important;
+  background-color: #F0F0F6 !important;
+}
