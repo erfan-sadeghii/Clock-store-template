@@ -1,7 +1,7 @@
 # ⌚ Chrono Watch Store — قالب فروشگاه ساعت (RTL + فارسی)
 
 <p align="center">
-  <img src="docs/preview.png" alt="Chrono Watch Store Preview" width="100%" />
+  <img src="preview.png" alt="Chrono Watch Store Preview" width="100%" />
 </p>
 
 <p align="center">
@@ -22,7 +22,9 @@
 ## 🖼️ پیش‌نمایش (Preview)
 > اگر فایل تصویر را داخل ریپو گذاشتی، اینجا نمایش داده می‌شود.
 
-![Preview](docs/preview.png)
+<p align="center">
+  <img src="Screenshot 2025-12-27 142913.png" width="900" />
+</p>
 
 ---
 
@@ -88,16 +90,6 @@
 
 ---
 
-## 📸 گالری (Screenshots)
-> اگر اسکرین‌شات‌های بیشتر گرفتی، این‌ها را داخل پوشه `docs/` بگذار و لینک‌ها را فعال کن.
-
-<!--
-![Home](docs/home.png)
-![Products](docs/products.png)
-![Footer](docs/footer.png)
--->
-
----
 
 ## 👤 سازنده
 **عرفان صادقی**  
